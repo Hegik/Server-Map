@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Header from '@components/Header';
-import logo from './server-icon.png'
+import logo from './server-icon.png';
 
 export default function Home() {
   const router = useRouter();
