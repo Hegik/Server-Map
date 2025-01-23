@@ -7,7 +7,7 @@ export default function Home() {
 
   // Weiterleitung durchführen (z.B. nach 3 Sekunden)
   setTimeout(() => {
-    router.push('https//gamec25.dsh.gg:25588'); 
+    router.push('http://gamec25.dsh.gg:25588'); 
   }, 3000);
 
   return (
