@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Header from '@components/Header';
+import logo from './server-icon.png'
 
 export default function Home() {
   const router = useRouter();
@@ -14,10 +15,16 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Hegik's Server Map</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Hegik's Server Map" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
       <main>
+        <img src={logo} alt="Logo" /> 
         <Header title="Weiterleitung in 3 Sekunden..." /> 
       </main>
     </div>
