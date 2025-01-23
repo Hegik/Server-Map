@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 
-window.location.replace("https://www.example.com"); 
-
 export default function Home() {
   return (
     <div className="container">
