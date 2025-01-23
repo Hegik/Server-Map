@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Header from '@components/Header';
-import logo from './server-icon.png';
 
 export default function Home() {
   const router = useRouter();
@@ -24,7 +23,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <img src={logo} alt="Logo" /> 
+        <img src="/server-icon.png" alt="Logo" /> 
         <Header title="Weiterleitung in 3 Sekunden..." /> 
       </main>
     </div>
